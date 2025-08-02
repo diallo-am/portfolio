@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="cpu">
+  <g id="Page-1" fill="none" fill-rule="evenodd" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+    <g id="Artboard" stroke="#000" stroke-width="2" transform="translate(-1195 -1567)">
+      <g id="cpu" transform="translate(1196 1568)">
+        <rect id="Rectangle-path" width="16" height="16" x="3" y="3" rx="2"></rect>
+        <path id="Rectangle-path" d="M8 8h6v6H8z"></path>
+        <path id="Shape" d="M8 0v3M14 0v3M8 19v3M14 19v3M19 8h3M19 13h3M0 8h3M0 13h3"></path>
+      </g>
+    </g>
+  </g>
+</svg>
