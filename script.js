@@ -2,7 +2,6 @@
 //-------------------languages
 
 window.addEventListener("DOMContentLoaded", () => {
-    // Détection langue
     const storedLang = localStorage.getItem("lang");
     const browserLang = navigator.language.slice(0, 2);
     const lang = storedLang || (["en", "fr", "ar"].includes(browserLang) ? browserLang : "en");
@@ -38,7 +37,6 @@ function setLang(lang) {
                 const value = translations[key];
 
                 if (value) {
-                    // Utiliser innerHTML pour gérer les balises HTML dans la traduction
                     el.innerHTML = value;
                 } else {
                     el.innerHTML = `[${key}]`;
@@ -200,6 +198,7 @@ function shadowAndHideNav() {
 
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 }
+
 
 
 
