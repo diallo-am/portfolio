@@ -33,9 +33,8 @@
   "languages.arabic": "Arabic",
   "languages.arabic.level": "Basic",
   "experience.title": "Experience",
-  "experience.placeholder": "Nothing here for the moment",
-  "experience.work_nature": "Work nature",
-  "experience.description": "Description",
+  "experience.work_nature": "Organizing Committee Member – 2023 Business Forum",
+  "experience.description": "Active participation in the organization of the 2023 ENSA Tétouan Business Forum as a member of the Sponsorship Committee. I contributed to identifying potential partners and sponsors, supporting logistical preparations, and coordinating with invited companies.",
   "experience.company_alt": "Company",
 
   "projects.title": "Projects",
@@ -46,7 +45,7 @@
   "projects.barrier.title": "Smart Automatic Barrier",
   "projects.barrier.desc": "Implementation of an automatic barrier system controlled by an ultrasonic sensor and Arduino microcontroller.",
   "projects.adas.title": "Traffic Sign Detection for ADAS",
-  "projects.adas.desc": "Development of a traffic sign detection system using a YOLOv8 model, integrated into a Python interface.",
+  "projects.adas.desc": "Development of a traffic sign detection system using a YOLOv8 model, integrated into a Python interface implemented in a Raspberry Pi.",
   "projects.btn": "See more",
 
   "certs.title": "Certifications",

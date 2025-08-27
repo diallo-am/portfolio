@@ -34,9 +34,8 @@
   "languages.arabic": "Arabe",
   "languages.arabic.level": "Notions de base",
   "experience.title": "Expérience",
-  "experience.placeholder": "Rien ici pour le moment",
-  "experience.work_nature": "Nature du travail",
-  "experience.description": "Description",
+  "experience.work_nature": "Membre du comité d'organisation - Forum des entreprises 2023",
+  "experience.description": "Participation active à l’organisation du Forum des Entreprises 2023 de l’ENSA Tétouan, au sein de la cellule sponsoring. J’ai contribué à la recherche de partenaires et sponsors, à la préparation logistique et à la coordination avec les entreprises invitées.",
   "experience.company_alt": "Entreprise",
 
   "projects.title": "Projets",
@@ -47,7 +46,7 @@
   "projects.barrier.title": "Barrière Automatique Intelligente",
   "projects.barrier.desc": "Mise en œuvre d’un système de barrière automatique contrôlé par un capteur à ultrasons et un microcontrôleur Arduino.",
   "projects.adas.title": "Détection de Panneaux Routiers pour ADAS",
-  "projects.adas.desc": "Développement d’un système de détection de panneaux routiers utilisant un modèle YOLOv8 intégré dans une interface Python.",
+  "projects.adas.desc": "Système de détection de panneaux routiers utilisant un modèle YOLOv8, intégré dans une interface Python, implémenté sur un Raspberry Pi.",
   "projects.btn": "Voir plus",
 
   "certs.title": "Certifications",
