@@ -97,12 +97,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 //---------skill-drop-------
-document.querySelectorAll('.skill-section i').forEach(i => {
-    i.addEventListener('click', () => {
-        const row = i.nextElementSibling;
-    
+document.querySelectorAll('.skill-section').forEach(section => {
+    section.addEventListener('click', () => {
+        const chevron = section.querySelector('.fa-chevron-down');
+        const row = section.querySelector('.skill-row');
+
         row.classList.toggle('hidden');
-        i.classList.toggle('rotate');
+        chevron.classList.toggle('rotate');
     });
 });
 
@@ -218,4 +219,5 @@ form.addEventListener('submit', e => {
             form.reset()
         })
         .catch(error => console.error('Error!', error.message))
+
 })
