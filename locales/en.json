@@ -46,6 +46,8 @@
   "projects.barrier.desc": "Implementation of an automatic barrier system controlled by an ultrasonic sensor and Arduino microcontroller.",
   "projects.adas.title": "Traffic Sign Detection for ADAS",
   "projects.adas.desc": "Development of a traffic sign detection system using a YOLOv8 model, integrated into a Python interface implemented in a Raspberry Pi.",
+  "projects.indus.title": "Embedded System for industrial monitoring",
+  "projects.indus.desc" : "Development of an embedded system based on Arduino for data acquisition (vibration and temperature sensors), wireless communication via ESP32 and development of monitoring interface with graphical visualization.",
   "projects.btn": "See more",
 
   "certs.title": "Certifications",
