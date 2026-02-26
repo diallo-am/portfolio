@@ -47,6 +47,8 @@
   "projects.barrier.desc": "Mise en œuvre d’un système de barrière automatique contrôlé par un capteur à ultrasons et un microcontrôleur Arduino.",
   "projects.adas.title": "Détection de Panneaux Routiers pour ADAS",
   "projects.adas.desc": "Système de détection de panneaux routiers utilisant un modèle YOLOv8, intégré dans une interface Python, implémenté sur un Raspberry Pi.",
+  "projects.indus.title": "Embedded System for industrial monitoring",
+  "projects.indus.desc" : "Development of an embedded system based on Arduino for data acquisition (vibration and temperature sensors), wireless communication via ESP32 and development of monitoring interface with graphical visualization.",
   "projects.btn": "Voir plus",
 
   "certs.title": "Certifications",
