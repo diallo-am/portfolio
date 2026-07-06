@@ -1,4 +1,3 @@
-
 //-------------------languages
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -47,14 +46,6 @@ function setLang(lang) {
 }
 
 
-
-
-
-
-
-
-
-
 //--------------------------theme-----------------------------------//
 
 let darkmode = localStorage.getItem('darkmode');
@@ -95,7 +86,6 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
 //---------skill-drop-------
 document.querySelectorAll('.skill-section').forEach(section => {
     section.addEventListener('click', () => {
@@ -107,7 +97,7 @@ document.querySelectorAll('.skill-section').forEach(section => {
     });
 });
 
-//-------menu 
+//-------tabs (about section)
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontent = document.getElementsByClassName("tab-content");
 
@@ -123,38 +113,79 @@ function opentab(tabname) {
     document.getElementById(tabname).classList.add("active-tab");
 }
 
+//-------side menu (mobile / tablet)
+// State is driven by a single "menu-open" class on #side_menu instead of
+// inline styles, so it always matches whatever width/position is defined
+// in CSS for the current breakpoint (fixes the menu never fully closing).
 var sidemenu = document.getElementById("side_menu");
+var menuIcon = document.getElementById("menu-icon");
+
 function open_menu() {
-    sidemenu.style.right = "0";
-    document.getElementById("menu-icon").style.display = "none";
-
+    sidemenu.classList.add("menu-open");
+    menuIcon.classList.add("icon-hidden");
 }
+
 function close_menu() {
-    sidemenu.style.right = "-200px";
-    document.getElementById("menu-icon").style.display = "block";
-
+    sidemenu.classList.remove("menu-open");
+    menuIcon.classList.remove("icon-hidden");
 }
+
+function isMenuOpen() {
+    return sidemenu.classList.contains("menu-open");
+}
+
 document.querySelectorAll("#side_menu a").forEach(link => {
     link.addEventListener("click", () => {
-        if (window.innerWidth <= 860) {
+        if (isMenuOpen()) {
             close_menu();
         }
     });
 });
 
+// Close the side menu on outside click/tap — but only while it is
+// actually open, and never for clicks on the hamburger icon itself
+// (that toggle already runs its own onclick handler).
 document.addEventListener("click", function (event) {
-    const menu = document.getElementById("side_menu");
-    const menuButton = document.querySelector(".fa-bars");
+    if (!isMenuOpen()) return;
 
-    if (window.innerWidth <= 860 && !menu.contains(event.target) && !menuButton.contains(event.target)) {
+    const clickedInsideMenu = sidemenu.contains(event.target);
+    const clickedHamburger = menuIcon.contains(event.target);
+
+    if (!clickedInsideMenu && !clickedHamburger) {
         close_menu();
     }
 });
 
-//----------------------scroll behavieour------------------ 
+// Close the menu automatically if the viewport grows back into desktop size
+window.addEventListener("resize", () => {
+    if (window.innerWidth > 1024 && isMenuOpen()) {
+        close_menu();
+    }
+});
+
+//----------------------scroll behaviour------------------
+// Hides/shows the fixed nav on scroll. On mobile, focusing an input
+// opens the on-screen keyboard, which the browser handles by
+// auto-scrolling the page a few pixels. That tiny automatic scroll
+// used to trigger the "hide/slide" nav animation, which looked like
+// the menu popping open. We only ignore scroll events for a brief
+// window right after a field is focused — normal scrolling while
+// typing still works exactly as before.
 let lastScrollTop = 0;
+const SCROLL_THRESHOLD = 8;
+let ignoreScrollUntil = 0;
+
+document.addEventListener("focusin", (event) => {
+    if (event.target.tagName === "INPUT" || event.target.tagName === "TEXTAREA") {
+        ignoreScrollUntil = Date.now() + 400;
+    }
+});
 
 window.addEventListener("scroll", function () {
+    if (Date.now() < ignoreScrollUntil || isMenuOpen()) {
+        return;
+    }
+
     shadowAndHideNav();
 });
 
@@ -162,36 +193,34 @@ function shadowAndHideNav() {
     const navBar = document.getElementById('navBar');
     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
+    if (Math.abs(currentScroll - lastScrollTop) < SCROLL_THRESHOLD) {
+        return;
+    }
+
     if (currentScroll > 50) {
         navBar.style.boxShadow = "0px 2px 6px rgba(9, 244, 244, 1)";
         navBar.style.transition = "top 0.3s ease";
 
         if (currentScroll > lastScrollTop) {
             if (window.innerWidth <= 680) {
-                navBar.style.top="-37px";
-                
-            }
-            else {
+                navBar.style.top = "-37px";
+            } else {
                 navBar.style.top = "-62px";
             }
-
         } else {
             navBar.style.top = "5px";
         }
-
 
         if (window.innerWidth <= 850) {
             navBar.style.height = "35px";
         } else {
             navBar.style.height = "60px";
         }
-    }
-     else {
+    } else {
         navBar.style.boxShadow = "none";
         navBar.style.top = "6px";
         if (window.innerWidth <= 850) {
             navBar.style.height = "40px";
-
         } else {
             navBar.style.height = "80px";
         }
@@ -201,9 +230,7 @@ function shadowAndHideNav() {
 }
 
 
-
-
-//---------------------forms content to google forms=-----------//
+//---------------------forms content to google forms-----------//
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwaSF6JQkOsTXcyi_jX_ceiZDWqAV5XzLQ-ezOyP31bWA3YblPm2wnjvbhxOvyJbKWy/exec'
 const form = document.forms['submit-to-google-sheet']
 const msg = document.getElementById("msg")
