@@ -56,9 +56,10 @@
   "projects.suricata.title": "Déploiement IDS/IPS avec Suricata sur Azure",
   "projects.suricata.desc": "Déploiement et durcissement de Suricata en mode IPS via NFQueue sur Azure, avec analyse de logs (jq) et validation du blocage de brute-force SSH via Hydra.",
 
-  "projects.iot.title": "Système de Détection d'Anomalies IoT",
-  "projects.iot.desc": "Projet collaboratif de développement d'un système de détection d'anomalies pour environnements IoT/embarqués, combinant télémétrie capteurs et détection basée sur le machine learning.",
-
+  "projects.indus.title": "Système embarqué pour la supervision industrielle",
+  "projects.indus.desc": "Système embarqué sécurisé de supervision de machine industrielle : capteurs ESP32 (vibration, température, puissance) publiant via MQTT/TLS vers un Raspberry Pi exécutant une détection d'anomalies basée sur LSTM, avec alertes par e-mail et tableau de bord de supervision en temps réel.",
+  "projects.iot.title": "Système de détection d'anomalies sur télémétrie satellitaire",
+  "projects.iot.desc": "Projet de groupe de développement d'un système de détection d'anomalies sur des mesures de télémétrie satellitaire, sur plateforme edge : firmware ESP32 et autoencodeur LSTM quantifié (TFLite) exposé via FastAPI sur un Raspberry Pi 5.",
   "projects.crypto.title": "VaultGCSE2 - Système de Chiffrement Hybride AES/RSA",
   "projects.crypto.desc": "Système de chiffrement hybride développé sur mesure combinant AES et RSA pour le stockage et l'échange sécurisé de données.",
 
@@ -70,8 +71,6 @@
   "projects.barrier.desc": "Mise en œuvre d'un système de barrière automatique contrôlé par un capteur à ultrasons et un microcontrôleur Arduino.",
   "projects.adas.title": "Détection de Panneaux Routiers pour ADAS",
   "projects.adas.desc": "Système de détection de panneaux routiers utilisant un modèle YOLOv8, intégré dans une interface Python, implémenté sur un Raspberry Pi.",
-  "projects.indus.title": "Système embarqué de supervision industrielle",
-  "projects.indus.desc": "Développement d'un système embarqué basé sur Arduino pour l'acquisition de données (capteurs de vibration et de température), communication sans fil via ESP32, et développement d'une interface de supervision avec visualisation graphique.",
   "projects.btn": "Voir plus",
 
   "certs.title": "Certifications",
@@ -85,6 +84,10 @@
   "certs.cc.title": "Certified in Cybersecurity",
   "certs.cc.desc": "Principes de sécurité, continuité d'activité et reprise après sinistre, contrôle d'accès, sécurité réseau, opérations de sécurité",
 
+  "certs.sc200.title": "Microsoft Certified: Security Operations Analyst (SC-200)",
+  "certs.sc200.desc": "Détection, investigation et réponse aux menaces avec Microsoft Sentinel, Microsoft Defender XDR et Defender for Cloud, avec chasse aux menaces en KQL et remédiation des incidents.",
+  "certs.sc730.title": "Microsoft Certified: Cybersecurity Business Professional (bêta)",
+  "certs.sc730.desc": "Notions fondamentales de sensibilisation à la cybersécurité pour les métiers non techniques : identification des menaces et des risques, gestion sûre des données sensibles, contrôles d'accès, signalement et réponse aux incidents de sécurité.",
   "certs.sc900.title": "Microsoft Certified : Security, Compliance, and Identity Fundamentals (SC-900)",
   "certs.sc900.desc": "Connaissances fondamentales des concepts de sécurité, de conformité et d'identité dans les services cloud Microsoft.",
 

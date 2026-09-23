@@ -285,7 +285,7 @@
                                         <img src="icons/sql.svg" class="skill-tag-icon"> SQL
                                     </span>
                                     <span class="skill-tag tag-blue">
-                                        <img src="icons/bash.svg" class="skill-tag-icon"> Bash
+                                        <img src="icons/logo-bash.png" class="skill-tag-icon"> Bash
                                     </span>
                                     <span class="skill-tag tag-blue">
                                         <img src="icons/vhdl.png" class="skill-tag-icon"> VHDL / Verilog
@@ -313,7 +313,7 @@
                                     <span class="skill-tag tag-teal"><img src="icons/iot-protocols.svg" class="skill-tag-icon">
                                         TCP/IP</span>
                                     <span class="skill-tag tag-teal"><img src="icons/linux (1).svg" class="skill-tag-icon"> Linux</span>
-                                    <span class="skill-tag tag-teal"><img src="icons/raspberry-pi.svg" class="skill-tag-icon"> Raspberry Pi</span>
+                                    <span class="skill-tag tag-teal"><img src="icons/raspberry-pi-logo.png" class="skill-tag-icon"> Raspberry Pi</span>
                                     <span class="skill-tag tag-teal"><img src="icons/azure.png" class="skill-tag-icon"> Azure Cloud</span>
                                     <span class="skill-tag tag-teal"><img src="icons/gcp.png" class="skill-tag-icon"> Google Cloud</span>
                                     <span class="skill-tag tag-teal"><img src="icons/oracle.png" class="skill-tag-icon"> Oracle Cloud</span>
@@ -471,7 +471,7 @@
 
             <div class="project-card">
                 <div class="project-thumb">
-                    <img src="images/indus1.jpeg" alt="Industrial Monitoring" onerror="this.style.display='none'">
+                    <img src="images/indus_monitor.png" alt="Industrial Monitoring" onerror="this.style.display='none'">
                     <svg class="thumb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 8h.01M12 8h.01M17 8h.01M7 12h10"/></svg>
                 </div>
                 <div class="project-body">
@@ -480,18 +480,18 @@
                         <span class="tag tag-teal">ESP32</span>
                         <span class="tag tag-blue">Arduino</span>
                         <span class="tag tag-coral">IoT</span>
+                        <span class="tag tag-purple">MQTT/TLS</span>
                     </div>
-                    <p class="project-desc" data-i18n="projects.indus.desc">Development of an embedded system based on Arduino for data acquisition (vibration and temperature sensors), wireless communication via ESP32 and development of monitoring interface with graphical visualization.</p>
+                    <p class="project-desc" data-i18n="projects.indus.desc">Secure embedded system for industrial machine monitoring: ESP32 sensors (vibration, temperature, power) publishing over MQTT/TLS to a Raspberry Pi running LSTM-based anomaly detection, with email alerts and a real-time monitoring dashboard.</p>
                 </div>
                 <div class="project-footer">
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/diallo-am/Industrial-Monitoring-System" class="gh-link">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
-                        View on GitHub
+                    <a target="_blank" rel="noopener noreferrer" href="https://secure-iot.diallo-sec.org" class="gh-link">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        <span>View Live Demo</span>
                     </a>
                 </div>
             </div>
 
-            <!-- Projets manquants (issus de la v1) -->
 
             <div class="project-card">
                 <div class="project-thumb">
@@ -530,9 +530,9 @@
                     <p class="project-desc" data-i18n="projects.soc.desc">End-to-end SOC automation pipeline connecting Wazuh, DFIR-IRIS, n8n, and Gemini AI for alert triage, AI-assisted analysis, Telegram/email notification, and Threat Intelligence enrichment, tested against real attack simulations (Atomic Red Team).</p>
                 </div>
                 <div class="project-footer">
-                    <a target="_blank" rel="noopener noreferrer" href="#" class="gh-link">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
-                        View on GitHub
+                    <a target="_blank" rel="noopener noreferrer" href="https://app.notion.com/p/Stage-PFA-NearSecure-37db2b90e61580ab97b5f874b9f50a47?source=copy_link" class="gh-link">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/><line x1="8" y1="9" x2="10" y2="9"/></svg>
+                        View Documentation
                     </a>
                 </div>
             </div>
@@ -565,12 +565,12 @@
                     <svg class="thumb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12h4l2-6 4 12 2-6h8"/></svg>
                 </div>
                 <div class="project-body">
-                    <p class="project-title" data-i18n="projects.iot.title">IoT Anomaly Detection System</p>
+                    <p class="project-title" data-i18n="projects.iot.title">Satelite telemetry Anomaly Detection System</p>
                     <div class="project-tags">
                         <span class="tag tag-teal">IoT</span>
                         <span class="tag tag-coral">Machine Learning</span>
                     </div>
-                    <p class="project-desc" data-i18n="projects.iot.desc">Collaborative project building an anomaly detection system for IoT/embedded environments, combining sensor telemetry with machine learning-based detection.</p>
+                    <p class="project-desc" data-i18n="projects.iot.desc">Group project building an anomaly detection system for satellite telemetry measurements on an edge platform: ESP32 firmware and a quantized LSTM autoencoder (TFLite) served through FastAPI on a Raspberry Pi 5.</p>
                 </div>
                 <div class="project-footer">
                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/diallo-am" class="gh-link">
@@ -618,6 +618,69 @@
     <div class="container">
         <h1 data-i18n="certs.title" class="sub-title">Certifications</h1>
         <div class="certs-grid">
+
+            <div class="cert-card">
+                <div class="cert-logo cert-logo--teal">
+                    <img src="images/cert-sc200.png" alt="Microsoft" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="cert-logo-fallback" style="display:none">
+                        <svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5z"/></svg>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <span class="cert-issuer">Microsoft</span>
+                    <p class="cert-title" data-i18n="certs.sc200.title">Microsoft Certified: Security Operations Analyst (SC-200)</p>
+                    <p class="cert-topics" data-i18n="certs.sc200.desc">Threat detection, investigation, and response using Microsoft Sentinel, Microsoft Defender XDR, and Defender for Cloud, with KQL-based threat hunting and incident remediation.</p>
+                    <div class="cert-footer">
+                        <span class="cert-badge cert-badge--teal">Microsoft</span>
+                        <a href="https://learn.microsoft.com/api/credentials/share/fr-fr/AbdoulMoumouniDIALLO-9336/14BCC26CAA57FCF4?sharingId=623DC65FC641087B" target="_blank" rel="noopener noreferrer" class="cert-verify-link" data-i18n="certs.verify">
+                            Verify
+                            <svg viewBox="0 0 24 24" width="12" height="12"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3zM5 5h6V3H3v18h18v-8h-2v6H5V5z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-logo cert-logo--teal">
+                    <img src="images/cert-sc900.png" alt="Microsoft" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="cert-logo-fallback" style="display:none">
+                        <svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5z"/></svg>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <span class="cert-issuer">Microsoft</span>
+                    <p class="cert-title" data-i18n="certs.sc900.title">Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900)</p>
+                    <p class="cert-topics" data-i18n="certs.sc900.desc">Foundational knowledge of security, compliance, and identity concepts across Microsoft cloud services.</p>
+                    <div class="cert-footer">
+                        <span class="cert-badge cert-badge--teal">Microsoft</span>
+                        <a href="https://learn.microsoft.com/api/credentials/share/en-us/AbdoulMoumouniDIALLO-9336/92FC03C08BA0AAA5?sharingId=623DC65FC641087B" target="_blank" rel="noopener noreferrer" class="cert-verify-link" data-i18n="certs.verify">
+                            Verify
+                            <svg viewBox="0 0 24 24" width="12" height="12"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3zM5 5h6V3H3v18h18v-8h-2v6H5V5z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-logo cert-logo--teal">
+                    <img src="images/cert-sc730.png" alt="Microsoft" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="cert-logo-fallback" style="display:none">
+                        <svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5z"/></svg>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <span class="cert-issuer">Microsoft</span>
+                    <p class="cert-title" data-i18n="certs.sc730.title">Microsoft Certified: Cybersecurity Business Professional (beta)</p>
+                    <p class="cert-topics" data-i18n="certs.sc730.desc">Foundational cybersecurity awareness for business roles: identifying threats and risks, handling sensitive data safely, applying access controls, and reporting and responding to security incidents.</p>
+                    <div class="cert-footer">
+                        <span class="cert-badge cert-badge--teal">Microsoft</span>
+                        <a href="https://learn.microsoft.com/api/credentials/share/en-us/AbdoulMoumouniDIALLO-9336/9F811FD79D40AAFC?sharingId=623DC65FC641087B" target="_blank" rel="noopener noreferrer" class="cert-verify-link" data-i18n="certs.verify">
+                            Verify
+                            <svg viewBox="0 0 24 24" width="12" height="12"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3zM5 5h6V3H3v18h18v-8h-2v6H5V5z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
             <div class="cert-card">
                 <div class="cert-logo cert-logo--purple">
@@ -675,48 +738,6 @@
                     <div class="cert-footer">
                         <span class="cert-badge cert-badge--blue">(ISC)²</span>
                         <a href="https://www.credly.com/badges/083703eb-41fb-457d-aa80-59fb479ab52d/public_url" target="_blank" rel="noopener noreferrer" class="cert-verify-link" data-i18n="certs.verify">
-                            Verify
-                            <svg viewBox="0 0 24 24" width="12" height="12"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3zM5 5h6V3H3v18h18v-8h-2v6H5V5z"/></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cert-card">
-                <div class="cert-logo cert-logo--teal">
-                    <img src="images/cert-sc900.png" alt="Microsoft" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-                    <div class="cert-logo-fallback" style="display:none">
-                        <svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5z"/></svg>
-                    </div>
-                </div>
-                <div class="cert-body">
-                    <span class="cert-issuer">Microsoft</span>
-                    <p class="cert-title" data-i18n="certs.sc900.title">Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900)</p>
-                    <p class="cert-topics" data-i18n="certs.sc900.desc">Foundational knowledge of security, compliance, and identity concepts across Microsoft cloud services.</p>
-                    <div class="cert-footer">
-                        <span class="cert-badge cert-badge--teal">Microsoft</span>
-                        <a href="https://learn.microsoft.com/api/credentials/share/en-us/AbdoulMoumouniDIALLO-9336/92FC03C08BA0AAA5?sharingId" target="_blank" rel="noopener noreferrer" class="cert-verify-link" data-i18n="certs.verify">
-                            Verify
-                            <svg viewBox="0 0 24 24" width="12" height="12"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3zM5 5h6V3H3v18h18v-8h-2v6H5V5z"/></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cert-card">
-                <div class="cert-logo cert-logo--teal">
-                    <img src="images/linux.png" alt="Cisco" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-                    <div class="cert-logo-fallback" style="display:none">
-                        <svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
-                    </div>
-                </div>
-                <div class="cert-body">
-                    <span class="cert-issuer">Cisco</span>
-                    <p class="cert-title" data-i18n="certs.linux.title">Linux Unhatched</p>
-                    <p class="cert-topics" data-i18n="certs.linux.desc">Linux commands, File system navigation, User management, Permissions, Shell basics</p>
-                    <div class="cert-footer">
-                        <span class="cert-badge cert-badge--teal">Cisco</span>
-                        <a href="https://www.credly.com/badges/d5d1a3c2-98dd-407d-a25b-37f1593d2527/public_url" target="_blank" rel="noopener noreferrer" class="cert-verify-link" data-i18n="certs.verify">
                             Verify
                             <svg viewBox="0 0 24 24" width="12" height="12"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3zM5 5h6V3H3v18h18v-8h-2v6H5V5z"/></svg>
                         </a>

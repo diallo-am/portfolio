@@ -55,9 +55,10 @@
   "projects.suricata.title": "IDS/IPS Deployment with Suricata on Azure",
   "projects.suricata.desc": "Deployment and hardening of Suricata in IPS mode via NFQueue on Azure, with log analysis (jq) and validated SSH brute-force blocking using Hydra.",
 
-  "projects.iot.title": "IoT Anomaly Detection System",
-  "projects.iot.desc": "Collaborative project building an anomaly detection system for IoT/embedded environments, combining sensor telemetry with machine learning-based detection.",
-
+  "projects.indus.title": "Embedded System for Industrial Monitoring",
+  "projects.indus.desc": "Secure embedded system for industrial machine monitoring: ESP32 sensors (vibration, temperature, power) publishing over MQTT/TLS to a Raspberry Pi running LSTM-based anomaly detection, with email alerts and a real-time monitoring dashboard.",
+  "projects.iot.title": "Satellite Telemetry Anomaly Detection System",
+  "projects.iot.desc": "Group project building an anomaly detection system for satellite telemetry measurements on an edge platform: ESP32 firmware and a quantized LSTM autoencoder (TFLite) served through FastAPI on a Raspberry Pi 5.",
   "projects.crypto.title": "VaultGCSE2 - Hybrid AES/RSA Encryption System",
   "projects.crypto.desc": "Custom-built hybrid encryption system combining AES and RSA for secure data storage and exchange.",
 
@@ -69,8 +70,6 @@
   "projects.barrier.desc": "Implementation of an automatic barrier system controlled by an ultrasonic sensor and Arduino microcontroller.",
   "projects.adas.title": "Traffic Sign Detection for ADAS",
   "projects.adas.desc": "Development of a traffic sign detection system using a YOLOv8 model, integrated into a Python interface implemented in a Raspberry Pi.",
-  "projects.indus.title": "Embedded System for Industrial Monitoring",
-  "projects.indus.desc": "Arduino-based data acquisition system (vibration and temperature sensors) with ESP32 wireless communication and a graphical monitoring interface, relevant to OT sensor/telemetry security contexts.",
   "projects.btn": "See more",
 
   "certs.title": "Certifications",
@@ -83,7 +82,11 @@
 
   "certs.cc.title": "Certified in Cybersecurity",
   "certs.cc.desc": "Security Principles, Business Continuity and Disaster Recovery, Access Control Concepts, Network Security, Security Operations",
-
+  
+  "certs.sc200.title": "Microsoft Certified: Security Operations Analyst (SC-200)",
+  "certs.sc200.desc": "Threat detection, investigation, and response using Microsoft Sentinel, Microsoft Defender XDR, and Defender for Cloud, with KQL-based threat hunting and incident remediation.",
+  "certs.sc730.title": "Microsoft Certified: Cybersecurity Business Professional (beta)",
+  "certs.sc730.desc": "Foundational cybersecurity awareness for business roles: identifying threats and risks, handling sensitive data safely, applying access controls, and reporting and responding to security incidents.",
   "certs.sc900.title": "Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900)",
   "certs.sc900.desc": "Foundational knowledge of security, compliance, and identity concepts across Microsoft cloud services.",
 
