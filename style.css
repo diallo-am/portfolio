@@ -88,6 +88,7 @@ nav {
     transition: background 0.3s ease;
 }
 
+
 .logo {
     font-size: 2.5rem;
     background: -webkit-linear-gradient(top right, rgba(18, 55, 246, 1), rgba(9, 244, 244, 1));
@@ -101,6 +102,7 @@ nav ul li {
     list-style: none;
     margin: 10px 15px;
 }
+
 
 nav ul li a {
     color: var(--text-color);
@@ -130,9 +132,10 @@ nav ul li a:hover::after {
 }
 
 .nav-utils {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 14px;
+    vertical-align: middle;
 }
 
 .lang-btn {
@@ -1268,7 +1271,7 @@ nav .fas {
    .menu-open class (toggled in script.js) instead of inline styles,
    so JS and CSS can never fall out of sync. */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
     .logo {
         font-size: 1.7rem;
     }
@@ -1335,12 +1338,26 @@ nav .fas {
         color: #fff;
     }
 
-    /* Language + theme toggle sit side by side, in their own row */
-    .nav-utils {
-        display: flex;
+    #side_menu li.nav-utils {
+        display: flex !important;
+        flex-direction: row;
+        flex-wrap: nowrap;
         align-items: center;
         gap: 14px;
         margin: 18px 25px;
+        padding: 0;
+        width: auto;
+    }
+
+    .nav-utils > .lang-dropdown,
+    .nav-utils > #theme-toggle-wrap {
+        flex: 0 0 auto;
+        width: auto;
+        margin: 0 !important;
+    }
+
+    .lang-dropdown {
+        position: relative; /* ancre le menu déroulant au bouton FR */
     }
 
     .lang-dropdown,
