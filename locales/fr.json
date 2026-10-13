@@ -50,6 +50,9 @@
   "projects.rtbt.title": "Red Team / Blue Team sur infrastructure industrielle (OT/ICS)",
   "projects.rtbt.desc": "Simulation complète d'une cyberattaque sur une infrastructure industrielle virtuelle (6 VM, Oracle Cloud), inspirée de Stuxnet. La Red Team a réalisé une killchain complète contre un automate Modbus TCP simulé ; la Blue Team a déployé et exploité un SOC open-source complet (Wazuh, ELK, TheHive, Shuffle) pour la détection et la réponse en temps réel.",
 
+  "projects.redblue.title": "Red-Blue-Automation pour l'OT/ICS",
+  "projects.redblue.desc": "Reconstruction sur OCI d'un laboratoire de sécurité OT/ICS : détection Blue Team avec Zeek et Wazuh sur GRFICSv3, et agent Red Team invoqué explicitement utilisant un LLM local sur CPU pour sélectionner et vérifier des techniques d'attaque prédéfinies via l'API REST Wazuh.",
+
   "projects.soc.title": "Automatisation des processus SOC (SOAR) avec n8n",
   "projects.soc.desc": "Pipeline d'automatisation SOC de bout en bout connectant Wazuh, DFIR-IRIS, n8n et Gemini AI pour le tri des alertes, l'analyse assistée par IA, la notification Telegram/email et l'enrichissement Threat Intelligence, testé face à des simulations d'attaques réelles (Atomic Red Team).",
 
