@@ -84,6 +84,8 @@
   "projects.adas.title": "Traffic Sign Detection for ADAS",
   "projects.adas.desc": "Development of a traffic sign detection system using a YOLOv8 model, integrated into a Python interface implemented in a Raspberry Pi.",
   "projects.btn": "See more",
+  "projects.github": "View on GitHub",
+  "projects.demo": "View Demo",
 
   "certs.title": "Certifications",
 

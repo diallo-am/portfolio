@@ -85,6 +85,8 @@
   "projects.adas.title": "Détection de Panneaux Routiers pour ADAS",
   "projects.adas.desc": "Système de détection de panneaux routiers utilisant un modèle YOLOv8, intégré dans une interface Python, implémenté sur un Raspberry Pi.",
   "projects.btn": "Voir plus",
+  "projects.github": "Voir sur GitHub",
+  "projects.demo": "Voir la démo",
 
   "certs.title": "Certifications",
 

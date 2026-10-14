@@ -84,6 +84,9 @@
   "projects.barrier.desc": "تنفيذ نظام حاجز أوتوماتيكي يتحكم فيه مستشعر فوق صوتي ووحدة تحكم أردوينو.",
   "projects.adas.title": "اكتشاف إشارات المرور لأنظمة ADAS",
   "projects.adas.desc": "تطوير نظام لاكتشاف إشارات المرور باستخدام نموذج YOLOv8 مدمج في واجهة بايثون، منفذ على Raspberry Pi.",
+  "projects.btn": "عرض المزيد",
+  "projects.github": "عرض على GitHub",
+  "projects.demo": "عرض النسخة التجريبية",
   "certs.title": "الشهادات",
 
   "certs.ibm.title": "شهادة IBM المهنية لمحلل الأمن السيبراني",
