@@ -36,6 +36,8 @@
   "languages.arabic.level": "Basic",
 
   "experience.title": "Experience",
+  "experience.professional.title": "Professional Experience",
+  "experience.activities.title": "Extracurricular Activities and Volunteering",
   "experience.nearsecure_alt": "NearSecure",
   "experience.nearsecure.title": "SOC Analyst Intern - NearSecure (06/2026 - 07/2026)",
   "experience.nearsecure.desc": "Designed and built a full SOC automation pipeline (SOAR) using n8n, integrating Wazuh (SIEM), DFIR-IRIS (case management), Google Gemini AI analysis, Telegram alerting, and automated HTML incident reports. Implemented alert deduplication, multi-tenant routing, and Threat Intelligence enrichment (VirusTotal/AbuseIPDB), and validated detections through Atomic Red Team simulations mapped to MITRE ATT&CK.",
@@ -43,6 +45,14 @@
   "experience.work_nature": "Organizing Committee Member – 2023 Business Forum",
   "experience.description": "Active participation in the organization of the 2023 ENSA Tétouan Business Forum as a member of the Sponsorship Committee. I contributed to identifying potential partners and sponsors, supporting logistical preparations, and coordinating with invited companies.",
   "experience.company_alt": "Company",
+  "experience.ctf.title": "Moroccan Academica Cybersecurity Competition",
+  "experience.ctf.period": "January 2026",
+  "experience.ctf.desc": "Participation in the Moroccan Academica Cybersecurity Competition, ranked 126th out of 1,076 teams.",
+  "experience.competition.tag": "Competition",
+  "experience.alumni.title": "Alumni Platform for the National Scientific High School of Bobo-Dioulasso",
+  "experience.alumni.role": "Project Manager - Steering and Coordination Unit; Infrastructure and Deployment Lead",
+  "experience.alumni.desc": "Designed and deployed an alumni network platform for the National Scientific High School of Bobo-Dioulasso, enabling users to discover alumni journeys by specialty, field, or country, create profiles, and request exchanges with volunteer alumni. As Project Manager in the steering and coordination unit, I also led the infrastructure and deployments. <a href=\"https://lsnb.diallo-sec.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Visit the platform</a>.",
+  "experience.volunteering.tag": "Volunteering",
 
   "projects.title": "Projects",
 

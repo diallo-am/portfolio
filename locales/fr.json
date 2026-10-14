@@ -37,6 +37,8 @@
   "languages.arabic.level": "Notions de base",
 
   "experience.title": "Expérience",
+  "experience.professional.title": "Expérience professionnelle",
+  "experience.activities.title": "Activités parascolaires et bénévolat",
   "experience.nearsecure_alt": "NearSecure",
   "experience.nearsecure.title": "Stagiaire Analyste SOC - NearSecure (06/2026 - 07/2026)",
   "experience.nearsecure.desc": "Conception et développement d'un pipeline d'automatisation SOC (SOAR) avec n8n, intégrant Wazuh (SIEM), DFIR-IRIS (gestion de cas), l'analyse par IA Google Gemini, l'alerting Telegram et des rapports d'incidents HTML automatisés. Mise en place de la déduplication d'alertes, du routage multi-clients, et de l'enrichissement Threat Intelligence (VirusTotal/AbuseIPDB), avec validation des détections via des simulations Atomic Red Team mappées au framework MITRE ATT&CK.",
@@ -44,6 +46,14 @@
   "experience.work_nature": "Membre du comité d'organisation - Forum des entreprises 2023",
   "experience.description": "Participation active à l'organisation du Forum des Entreprises 2023 de l'ENSA Tétouan, au sein de la cellule sponsoring. J'ai contribué à la recherche de partenaires et sponsors, à la préparation logistique et à la coordination avec les entreprises invitées.",
   "experience.company_alt": "Entreprise",
+  "experience.ctf.title": "Moroccan Academica Cybersecurity Competition",
+  "experience.ctf.period": "Janvier 2026",
+  "experience.ctf.desc": "Participation à la Moroccan Academica Cybersecurity Competition, avec un classement de 126e sur 1 076 équipes.",
+  "experience.competition.tag": "Compétition",
+  "experience.alumni.title": "Plateforme des alumni du Lycée Scientifique National de Bobo-Dioulasso",
+  "experience.alumni.role": "Chargé de projet dans la cellule pilotage et coordination ; responsable infrastructure et déploiements",
+  "experience.alumni.desc": "Conception et déploiement d'une plateforme de réseau des alumni du Lycée Scientifique National de Bobo-Dioulasso, permettant de découvrir les parcours par spécialité, domaine ou pays, de créer un profil et de demander un échange avec un alumni volontaire. En tant que chargé de projet dans la cellule pilotage et coordination, j'ai également pris en charge l'infrastructure et les déploiements. <a href=\"https://lsnb.diallo-sec.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Visiter la plateforme</a>.",
+  "experience.volunteering.tag": "Bénévolat",
 
   "projects.title": "Projets",
 

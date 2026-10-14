@@ -248,3 +248,39 @@ form.addEventListener('submit', e => {
         .catch(error => console.error('Error!', error.message))
 
 })
+
+//---------------------project and certification image viewer------------------//
+const imageLightbox = document.getElementById('image-lightbox');
+const imageLightboxImage = document.getElementById('image-lightbox-img');
+const imageLightboxClose = document.querySelector('.image-lightbox-close');
+const zoomableImages = document.querySelectorAll('.project-thumb img, .cert-logo img');
+
+function closeImageLightbox() {
+    imageLightbox.classList.remove('is-visible');
+    imageLightbox.setAttribute('aria-hidden', 'true');
+    imageLightboxImage.src = '';
+    document.body.style.overflow = '';
+}
+
+zoomableImages.forEach(image => {
+    image.addEventListener('click', () => {
+        imageLightboxImage.src = image.currentSrc || image.src;
+        imageLightboxImage.alt = image.alt;
+        imageLightbox.classList.add('is-visible');
+        imageLightbox.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    });
+});
+
+imageLightboxClose.addEventListener('click', closeImageLightbox);
+imageLightbox.addEventListener('click', event => {
+    if (event.target === imageLightbox) {
+        closeImageLightbox();
+    }
+});
+
+document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && imageLightbox.classList.contains('is-visible')) {
+        closeImageLightbox();
+    }
+});

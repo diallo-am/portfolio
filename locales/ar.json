@@ -37,6 +37,8 @@
   "languages.arabic.level": "أساسيات",
 
   "experience.title": "الخبرات",
+  "experience.professional.title": "الخبرة المهنية",
+  "experience.activities.title": "الأنشطة اللامنهجية والعمل التطوعي",
   "experience.nearsecure_alt": "NearSecure",
   "experience.nearsecure.title": "متدرب محلل SOC - NearSecure (06/2026 - 07/2026)",
   "experience.nearsecure.desc": "تصميم وبناء خط أتمتة كامل لمركز العمليات الأمنية (SOAR) باستخدام n8n، مع دمج Wazuh (SIEM)، وDFIR-IRIS (إدارة الحالات)، وتحليل الذكاء الاصطناعي عبر Google Gemini، وتنبيهات Telegram، وتقارير حوادث HTML آلية. تنفيذ إزالة تكرار التنبيهات، وتوجيه متعدد العملاء، وإثراء معلومات التهديدات (VirusTotal/AbuseIPDB)، والتحقق من عمليات الكشف عبر محاكاة هجمات Atomic Red Team وفق إطار MITRE ATT&CK.",
@@ -44,6 +46,14 @@
   "experience.work_nature": "عضو لجنة التنظيم – منتدى المقاولات 2023",
   "experience.description": "المشاركة الفعّالة في تنظيم منتدى المقاولات 2023 بالمدرسة الوطنية للعلوم التطبيقية بتطوان، ضمن خلية الرعاية (Sponsoring). ساهمتُ في البحث عن الشركاء والداعمين، والإعداد اللوجستي، والتنسيق مع الشركات المدعوة.",
   "experience.company_alt": "الشركة",
+  "experience.ctf.title": "مسابقة Moroccan Academica للأمن السيبراني",
+  "experience.ctf.period": "يناير 2026",
+  "experience.ctf.desc": "المشاركة في مسابقة Moroccan Academica للأمن السيبراني، مع الحصول على المرتبة 126 من أصل 1076 فريقًا.",
+  "experience.competition.tag": "مسابقة",
+  "experience.alumni.title": "منصة خريجي الثانوية الوطنية العلمية في بوبو ديولاسو",
+  "experience.alumni.role": "مدير المشروع في خلية التوجيه والتنسيق؛ مسؤول البنية التحتية وعمليات النشر",
+  "experience.alumni.desc": "تصميم ونشر منصة لشبكة خريجي الثانوية الوطنية العلمية في بوبو ديولاسو، تتيح اكتشاف مسارات الخريجين حسب التخصص أو المجال أو البلد، وإنشاء ملفات شخصية، وطلب التواصل مع خريجين متطوعين. بصفتي مدير المشروع في خلية التوجيه والتنسيق، توليت أيضًا مسؤولية البنية التحتية وعمليات النشر. <a href=\"https://lsnb.diallo-sec.org/\" target=\"_blank\" rel=\"noopener noreferrer\">زيارة المنصة</a>.",
+  "experience.volunteering.tag": "العمل التطوعي",
 
   "projects.title": "المشاريع",
 

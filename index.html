@@ -371,6 +371,7 @@
 <div id="experience">
     <div class="container">
         <h1 data-i18n="experience.title" class="sub-title">Experience</h1>
+        <h2 data-i18n="experience.professional.title" class="experience-subtitle">Professional Experience</h2>
         <div class="timeline">
 
             <div class="timeline-item">
@@ -399,6 +400,10 @@
                 </div>
             </div>
 
+        </div>
+
+        <h2 data-i18n="experience.activities.title" class="experience-subtitle">Extracurricular Activities and Volunteering</h2>
+        <div class="timeline">
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-card">
@@ -408,19 +413,60 @@
                             <div class="timeline-initials" style="display:none">BE</div>
                         </div>
                         <div class="timeline-meta">
-                            <p class="timeline-role" data-i18n="experience.work_nature">Membre du comité d'organisation du forum des entreprises 2023</p>
+                            <p class="timeline-role" data-i18n="experience.work_nature">Organizing Committee Member - 2023 Business Forum</p>
                             <p class="timeline-org">ENSA Tétouan · Oct. 2023</p>
                         </div>
                     </div>
-                    <p class="timeline-desc" data-i18n="experience.description">Participation à l'organisation du forum d'entreprise à l'ENSA de Tétouan en Octobre 2023 au sein de la cellule sponsoring. J'ai travaillé en étroite collaboration avec mes collègues pour identifier et inviter différentes entreprises au forum.</p>
+                    <p class="timeline-desc" data-i18n="experience.description">Active participation in the organization of the 2023 ENSA Tétouan Business Forum as a member of the Sponsorship Committee. I contributed to identifying potential partners and sponsors, supporting logistical preparations, and coordinating with invited companies.</p>
                     <div class="timeline-tags">
                         <span class="skill-tag tag-teal">Communication</span>
-                        <span class="skill-tag tag-teal">Organisation</span>
-                        <span class="skill-tag tag-teal">Sponsoring</span>
+                        <span class="skill-tag tag-teal">Organization</span>
+                        <span class="skill-tag tag-teal">Sponsorship</span>
                     </div>
                 </div>
             </div>
 
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <div class="timeline-logo">
+                            <div class="timeline-initials">CTF</div>
+                        </div>
+                        <div class="timeline-meta">
+                            <p class="timeline-role" data-i18n="experience.ctf.title">Moroccan Academica Cybersecurity Competition</p>
+                            <p class="timeline-org" data-i18n="experience.ctf.period">January 2026</p>
+                        </div>
+                    </div>
+                    <p class="timeline-desc" data-i18n="experience.ctf.desc">Participation in the Moroccan Academica Cybersecurity Competition, ranked 126th out of 1,076 teams.</p>
+                    <div class="timeline-tags">
+                        <span class="skill-tag tag-teal">CTF</span>
+                        <span class="skill-tag tag-teal">Cybersecurity</span>
+                        <span class="skill-tag tag-teal" data-i18n="experience.competition.tag">Competition</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <div class="timeline-logo">
+                            <div class="timeline-initials">AL</div>
+                        </div>
+                        <div class="timeline-meta">
+                            <p class="timeline-role" data-i18n="experience.alumni.title">Alumni Platform for the National Scientific High School of Bobo-Dioulasso</p>
+                            <p class="timeline-org" data-i18n="experience.alumni.role">Project Manager - Steering and Coordination Unit; Infrastructure and Deployment Lead</p>
+                        </div>
+                    </div>
+                    <p class="timeline-desc" data-i18n="experience.alumni.desc">Designed and deployed an alumni network platform for the National Scientific High School of Bobo-Dioulasso, enabling users to discover alumni journeys by specialty, field, or country, create profiles, and request exchanges with volunteer alumni. As Project Manager in the steering and coordination unit, I also led the infrastructure and deployments. <a href="https://lsnb.diallo-sec.org/" target="_blank" rel="noopener noreferrer">Visit the platform</a>.</p>
+                    <div class="timeline-tags">
+                        <span class="skill-tag tag-teal" data-i18n="experience.volunteering.tag">Volunteering</span>
+                        <span class="skill-tag tag-teal">Infrastructure</span>
+                        <span class="skill-tag tag-teal">Deployment</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -511,10 +557,10 @@
                     <div class="project-tags">
                         <span class="tag tag-blue">Zeek</span>
                         <span class="tag tag-blue">Wazuh</span>
-                        <span class="tag tag-teal">n8n</span>
+                        <span class="tag tag-teal">Tracecat</span>
                         <span class="tag tag-coral">Local LLM</span>
                     </div>
-                    <p class="project-desc" data-i18n="projects.redblue.desc">Reconstruction of an OT/ICS security lab on OCI: Blue Team detection with Zeek and Wazuh on GRFICSv3, plus an explicitly invoked Red Team agent using a local CPU-only LLM to select and verify fixed attack techniques through the Wazuh REST API.</p>
+                    <p class="project-desc" data-i18n="projects.redblue.desc">Reconstruction of an OT/ICS security lab on OCI: Blue Team detection with Zeek and Wazuh on GRFICSv3 simulated chemical processplant, plus an explicitly invoked Red Team agent using a local CPU-only LLM to select and verify fixed attack techniques through the Wazuh REST API. A Tracecat workflow orchestrates the entire process with human-in-the-loop decision validation.</p>
                 </div>
                 <div class="project-footer">
                     <a target="_blank" rel="noopener noreferrer" href="https://app.notion.com/p/Projet-Red-Blue-Automation-Suivi-OT-ICS-39bb2b90e61580308133ca8d249c51e0?source=copy_link" class="gh-link">
@@ -532,7 +578,7 @@
                 <div class="project-body">
                     <p class="project-title" data-i18n="projects.soc.title">SOC Process Automation (SOAR) with n8n</p>
                     <div class="project-tags">
-                        <span class="tag tag-blue">n8n</span>
+                    <span class="tag tag-blue">n8n</span>
                         <span class="tag tag-blue">DFIR-IRIS</span>
                         <span class="tag tag-teal">Gemini AI</span>
                     </div>
@@ -860,6 +906,12 @@
     <div data-i18n="contact.copyright" class="copyright">Copyright © Diallo Abdoul-Moumouni</div>
 </div>
 
+<div id="image-lightbox" class="image-lightbox" aria-hidden="true">
+    <div class="image-lightbox-content" role="dialog" aria-modal="true" aria-label="Enlarged image">
+        <button type="button" class="image-lightbox-close" aria-label="Close image">&times;</button>
+        <img id="image-lightbox-img" src="" alt="">
+    </div>
+</div>
 
 
 <script src="script.js"></script>

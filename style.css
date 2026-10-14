@@ -638,6 +638,17 @@ nav .fas {
     padding: 50px 0;
 }
 
+.experience-subtitle {
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 40px 0 0 10px;
+}
+
+.experience-subtitle + .timeline {
+    margin-top: 24px;
+}
+
 .timeline {
     margin-top: 50px;
     display: flex;
@@ -959,6 +970,7 @@ nav .fas {
     height: 100%;
     object-fit: cover;
     display: block;
+    cursor: zoom-in;
     transition: transform 0.4s;
 }
 
@@ -1074,6 +1086,71 @@ nav .fas {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    cursor: zoom-in;
+}
+
+.image-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    background: rgba(4, 12, 20, 0.86);
+}
+
+.image-lightbox.is-visible {
+    display: flex;
+}
+
+.image-lightbox-content {
+    position: relative;
+    max-width: min(92vw, 1100px);
+    max-height: 88vh;
+}
+
+.image-lightbox-content img {
+    display: block;
+    max-width: 100%;
+    max-height: 88vh;
+    object-fit: contain;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+}
+
+.image-lightbox-close {
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 8px);
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 50%;
+    background: var(--box-bg);
+    color: var(--text-color);
+    font-size: 25px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.image-lightbox-close:hover {
+    color: var(--highlight);
+    border-color: var(--highlight);
+}
+
+@media (max-width: 680px) {
+    .image-lightbox {
+        padding: 24px 16px;
+    }
+
+    .image-lightbox-content,
+    .image-lightbox-content img {
+        max-width: 96vw;
+        max-height: 82vh;
+    }
 }
 
 .cert-logo--blue { background: rgba(55, 138, 221, 0.12); }
